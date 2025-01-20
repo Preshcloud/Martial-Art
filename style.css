@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color:;
+    background-color: #d3cdcd;
+  }
+  
+  header {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #f00;
+  }
+  
+  /* Sections */
+  section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  #about {
+    background:black;
+    padding: 40px;
+    border-radius: 8px;
+    color: #ddd;
+  }
+  
+  #schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgb(151, 150, 149);
+  }
+  
+  #schedule table, #schedule th, #schedule td {
+    border: 1px solid #220808;
+  }
+  
+  #schedule th, #schedule td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact form label {
+    margin-top: 10px;
+  }
+  
+  #contact form input, #contact form textarea, #contact form button {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact form button {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #contact form button:hover {
+    background: #f00;
+  }
+  
+  .map iframe {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  /* Animations */
+  header, section {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #hero {
+    height: 100vh;
+    background: url('./ma3.webp') no-repeat center center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #hero .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  #hero .btn {
+    background: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background 0.3s;
+  }
+  
+  #hero .btn:hover {
+    background: #000;
+  }
+  #testimonials {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #testimonials .testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  #testimonials .testimonial {
+    background:  #d3cdcd;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #testimonials .testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  #testimonials .testimonial h4 {
+    color: #555;
+  }
+  
+  #gallery {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  #gallery .gallery-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #gallery img {
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  #gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social-icons {
+    margin: 10px 0;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  footer .social-icons img {
+    width: 30px;
+    transition: transform 0.3s;
+  }
+  
+  footer .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
